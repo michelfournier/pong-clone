@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://yuar0hbfq4hk"]
+
+[ext_resource type="Script" path="res://scripts/ball.gd" id="1_3ln8r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o3aml"]
+
+[node name="CollisionShape2D" type="CollisionShape2D"]
+position = Vector2(286, 257)
+shape = SubResource("CircleShape2D_o3aml")
+debug_color = Color(1, 1, 1, 1)
+script = ExtResource("1_3ln8r")
