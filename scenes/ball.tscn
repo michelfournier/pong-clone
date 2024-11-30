@@ -2,10 +2,13 @@
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_3ln8r"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_o3aml"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_sndm3"]
 
-[node name="CollisionShape2D" type="CollisionShape2D"]
-position = Vector2(286, 257)
-shape = SubResource("CircleShape2D_o3aml")
-debug_color = Color(1, 1, 1, 1)
+[node name="Node2D" type="Node2D"]
 script = ExtResource("1_3ln8r")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_sndm3")
+debug_color = Color(1, 1, 1, 1)
